@@ -1,0 +1,1 @@
+"use strict";$(function(){$(".container").hover(function(){$(this).animate({opacity:.3},3e3)},function(){$(this).animate({opacity:1},3e3)})});
