@@ -5,11 +5,16 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
 <body>
+	<header></header>
+
 	<div class="container">HELLO大家好</div>
 
-	<script type="text/javascript" src="lib/jquery/jquery-1.12.4.min.js"></script>
-	<script src="js/index.js"></script>
+	<footer></footer>
+
+	<script type="text/javascript" src="lib/requirejs/require.js" data-main="js/index"></script> <!-- require实现自己功能的时候要从 data-main="js/index" 这儿相当于入口 -->
 </body>
 </html>

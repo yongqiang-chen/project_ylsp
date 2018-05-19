@@ -1,0 +1,234 @@
+/*上部分*/
+.headbox{
+	width: 100%;
+	height: 164px;
+	border-bottom: 2px solid #36c573;
+}
+.header{
+	width: 100%;
+	height: 30px;
+	background: #f1f1f1;
+}
+.header .sheader{
+	width: 1200px;
+	height: 30px;
+	margin: 0 auto;
+	/*background: yellow;*/
+}
+.header .sheader .send{
+	width: 100px;
+	height: 30px;
+	float: left;
+	font-size: 12px;
+	line-height: 30px;
+	color: #666666;
+}
+.header .sheader .sitenav{
+	width: 230px;
+	height: 30px;
+	font-size: 12px;
+	line-height: 30px;
+	float: right;
+}
+.header .sheader .sitenav li{
+	/*list-style: none;*/
+	float: left;
+	height: 30px;
+}
+.header .sheader .sitenav li a{
+	/*text-decoration: none;*/
+	color: #666666;
+	padding: 0 9px;
+}
+.header .sheader .sitenav li a:hover{
+	color:#7bbe2b;
+}
+
+/*中部分*/
+.headbox .nav{
+	width: 1200px;
+	height: 94px;
+	margin: 0 auto;
+	/*background: pink;*/
+}
+.headbox .nav .logo{
+	width: 190px;
+	height: 43px;
+	float: left;
+	margin-top: 30px;
+	margin-right: 145px;
+}
+.headbox .nav .logo img{
+	width: 100%;
+	height: 100%;
+}
+.headbox .nav .searchbox{
+	width: 607px;
+	height: 64px;
+	float: left;
+	margin-top: 30px;
+	/*background: yellow;*/
+}
+.headbox .nav .searchbox .search-bar{
+	width: 607px;
+	height: 40px;
+	/*background: yellow;*/
+}
+.headbox .nav .searchbox .search-bar .keyword{
+	width: 512px;
+	height: 38px;
+	border: 1px solid #ffc000;
+	/*margin-right: 0;*/
+	padding-left: 10px;
+	outline: none;/*解决表单蓝色边框*/
+	float: left;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius:5px;
+}
+.headbox .nav .searchbox .search-bar .search{
+	width: 82px;
+	height: 40px;
+	border: none;
+	background: #ffc000;
+	/*margin-left: 0;*/
+	float: left;
+	font-size: 18px;
+	color: white;
+}
+.headbox .nav .searchbox .search-word{
+	width: 524px;
+	height: 24px;
+	/*background: yellow;*/
+	font-size: 12px;
+	line-height: 24px;
+}
+.headbox .nav .searchbox .search-word a{
+	color: #c0c0c0;
+	padding-right: 10px;
+}
+.headbox .nav .cart{
+	width: 158px;
+	height: 36px;
+	border: 1px solid #ffc000;
+	border-radius: 5px;
+	float: right;
+	margin-top: 30px;
+	position: relative;
+}
+/*.headbox .nav .cart i{
+	position: absolute;
+	background: url(../imgs/icon.png) no-repeat;
+	display: block;
+}*//*转到公共样式了*/
+.headbox .nav .cart a{
+	display: block;
+	margin-left: 49px;
+	margin-top: 10px;
+	font-size: 12px;
+	color: #666666;
+}
+.headbox .nav .cart i:nth-child(1){
+	width: 20px;
+	height: 20px;
+	top: 6px;
+	left: 20px;
+	/*background:green;*/
+	background-position: 0 -150px;
+}
+.headbox .nav .cart i:nth-child(3){
+	width: 5px;
+	height: 9px;
+	top:14px;
+	right: 20px;
+	/*background: green;*/
+	background-position: -90px -150px;
+}
+.headbox .nav .cart i:nth-child(4){
+	width: 16px;
+	height: 17px;
+	top:-5px;
+	right: -10px;
+	background: #7bbe2b;
+	border-radius: 7px 7px 7px 0;
+	font-size: 12px;
+	color: white;
+	line-height: 17px;
+	text-align: center;
+}
+
+/*下部分*/
+.headbox .menu{
+	width: 1200px;
+	height: 34px;
+	/*background: #36c573;*/
+	/*margin-top:2px;*/
+	margin: 0 auto;
+	margin-top: 6px;
+}
+.headbox .menu .smenu{
+	width: 180px;
+	height: 34px;
+	float: left;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: #36c573;
+	position: relative;
+}
+.headbox .menu .smenu>a{
+	display: block;
+	width: 180px;
+	height: 34px;
+}
+.headbox .menu .smenu>a span{
+	color: white;
+	display: block;
+	float: left;
+	width: 73px;
+	height: 18px;
+	font-size: 18px;
+	line-height: 18px;
+	margin-top: 10px;
+	margin-left: 29px;
+}
+.headbox .menu .smenu>a i{
+	height: 0;
+	width: 0;
+	border-left: 5px solid #36c573;
+	border-right: 5px solid #36c573;
+	border-bottom: 5px solid #36c573;
+	border-top: 5px solid white;
+	top:15px;
+	right: 20px;
+}
+.headbox .menu .smenu ul{
+	width: 180px;
+	height: 351px;/*原本是360px*/
+	background-color: rgba(0,0,0,0.1); /*背景色透明*/
+	position: absolute;
+	top: 36px;
+	left: 0px;
+}
+.headbox .menu .smenu ul li{
+	padding: 9px 15px;
+	position: relative;
+}
+.headbox .menu .smenu ul li a{
+	color: #000;
+	font-size: 14px;
+}
+.headbox .menu .smenu ul li i{
+	width: 5px;
+	height: 9px;
+	top:14px;
+	right: 20px;
+	/*background: green;*/
+	background-position: -90px -150px;
+}
+.headbox .menu .smenu ul li:hover{
+	background: white;
+	border-top: 1px solid #36c573;
+	border-bottom: 1px solid #36c573;
+}
+.headbox .menu .smenu ul li a:hover{
+	color:#36c573;
+}

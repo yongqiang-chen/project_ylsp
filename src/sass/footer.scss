@@ -1,0 +1,80 @@
+/*footer上部分*/
+.f-up{
+	width: 100%;
+	height:90px;
+	background: #f6f1e2;
+}
+.f-up .f-upbox{
+	width: 1200px;
+	height: 90px;
+	margin: 0 auto;
+	/*background: green;*/
+}
+.f-up .f-upbox ul{
+	width: 1200px;
+	height: 90px;
+}
+.f-up .f-upbox ul li{
+	float: left;
+	text-align: center;
+	width: calc(100% / 4);
+	width: -moz-calc(100% / 4);
+	width: -webkit-calc(100% / 4);
+}
+.f-up .f-upbox ul li img{
+	margin-top: 16px;
+}
+
+/*footer中间部分*/
+.f-cen{
+	width: 1080px;
+	height: 200px;
+	margin: 0 auto;
+	/*background: green;*/
+	padding-left: 120px;
+	border-bottom: 1px solid #dddddd;
+}
+.f-cen .help-nav{
+	float: left;
+	/*text-align: center;*/
+	width: calc(100% / 5);
+	width: -moz-calc(100% / 5);
+	width: -webkit-calc(100% / 5);
+	vertical-align: top;
+	padding-top:40px;
+	line-height: 20px;
+}
+.f-cen .help-nav .help-title{
+	font-size: 16px;
+	margin-bottom: 10px;
+	line-height: 20px;
+}
+.f-cen .help-nav .help-list a{
+	color: #666666;
+	font-size: 12px;
+}
+.f-cen .help-nav .help-list li:hover a{
+	color: #36c573;
+}
+
+/*底部*/
+.f-down{
+	width: 1200px;
+	height: 99px;
+	margin: 0 auto;
+	/*background: green;*/
+	overflow: hidden;
+}
+.f-down p{
+	font-size: 12px;
+	text-align: center;
+	margin-top: 24px;
+	color: #676767;
+}
+.f-down p:nth-child(1) a{
+	margin: 0 5px;
+	color: #676767;
+}
+.f-down p:nth-child(1) a:hover{
+	color: #36c573;
+}

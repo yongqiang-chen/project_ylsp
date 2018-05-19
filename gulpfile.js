@@ -1,9 +1,9 @@
 const gulp = require("gulp"),
-	sass = require("gulp-sass"),
-	uglify = require("gulp-uglify"),
-	babel = require("gulp-babel"),
-	htmlmin = require("gulp-htmlmin"),
-	connect = require("gulp-connect");
+	sass = require("gulp-sass"), //sass编译
+	uglify = require("gulp-uglify"), //js压缩
+	babel = require("gulp-babel"), //ES6 ES5转换 严格模式
+	htmlmin = require("gulp-htmlmin"), //html压缩
+	connect = require("gulp-connect"); //服务器
 
 //	启动web服务器
 gulp.task("conn", function(){
@@ -48,7 +48,7 @@ gulp.task("copy-lib", function(){
 
 //复制imgs
 gulp.task("copy-imgs", function(){
-	gulp.src("src/img/**/*.*")
+	gulp.src("src/imgs/**/*.*")
 		.pipe(gulp.dest("dist/imgs"));
 });
 
