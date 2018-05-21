@@ -32,7 +32,7 @@ define(["jquery", "cookie"], function($){
 			// }
 
 			// 鼠标移入一级菜单事件
-			$(".firmenu").hover(function(){$(".minmenu").css({display: "block"});}, function(){$(".minmenu").css({display: "none"});});
+			// $(".firmenu").hover(function(){$(".minmenu").css({display: "block"});}, function(){$(".minmenu").css({display: "none"});});
 		});
 
 		/*加载尾部*/

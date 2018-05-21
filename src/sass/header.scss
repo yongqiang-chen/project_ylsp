@@ -202,7 +202,7 @@
 }
 .headbox .menu .smenu>ul{
 	width: 180px;
-	height: 351px;/*原本是360px*/
+	height: 360px;/*原本是360px*/
 	background-color: rgba(0,0,0,0.1); /*背景色透明*/
 	position: absolute;
 	top: 36px;
@@ -210,29 +210,49 @@
 	z-index: 999;
 }
 .headbox .menu .smenu>ul li{
-	padding: 9px 15px;
-	position: relative;
+	/*padding: 9px 15px;*/
+	/*position: relative;*/
+	width: 160px;
+	height: 36px;
+	text-align: left;
+	padding: 2px 10px;
+	/*border-top: 1px solid #36c573;*/
+	/*border-bottom: 1px solid #36c573;*/
 }
 .headbox .menu .smenu>ul li a{
 	color: #000;
 	font-size: 14px;
+	line-height: 36px;
+	font-weight: bolder;
+	display: block;
+	float: left;
 }
-.headbox .menu .smenu>ul li i{
+.headbox .menu .smenu>ul li em{
 	width: 5px;
 	height: 9px;
-	top:14px;
-	right: 20px;
+	display: block;
+	float: right;
+	margin-top: 14px;
+	margin-right: 20px;
+	/*top:14px;*/
+	/*right: 20px;*/
 	/*background: green;*/
-	background-position: -90px -150px;
+	background: url(../imgs/icon.png) no-repeat -90px -150px;
+	/*position: absolute;*/
+	/*background-position: -90px -150px;*/
 }
 .headbox .menu .smenu>ul li:hover{
 	background: white;
 	border-top: 1px solid #36c573;
 	border-bottom: 1px solid #36c573;
-	width: 151px;
+	width: 161px;
+	/*padding: 1px 10px;*/
 }
 .headbox .menu .smenu>ul li a:hover{
 	color:#36c573;
+}
+.headbox .menu .smenu>ul li:hover .minmenu{
+	display: block;
 }
 
 /*隐藏部分*/
@@ -242,7 +262,7 @@
 	left: 180px;
 	top: 35px;
 	width: 1017px;
-	min-height: 359px;
+	min-height: 360px;
 	border: 1px solid #36c573;
 	z-index:2;
 	background: white;
