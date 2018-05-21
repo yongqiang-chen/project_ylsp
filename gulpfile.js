@@ -31,7 +31,7 @@ gulp.task("index",function(){
 
 //压缩html文件(子页面)
 gulp.task("html",function(){
-    gulp.src("src/html/*.html")
+    gulp.src("src/html/**/*.html")
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest("dist/html"))
         .pipe(connect.reload())
