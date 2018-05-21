@@ -69,3 +69,79 @@
 .xm-container .next {
 	right: 0;
 }
+
+/*当季精选*/
+.salehot{
+	width: 1200px;
+	height: 230px;
+	margin: 0 auto;
+	border: 1px solid red;
+	margin-top: 45px;
+	position: relative;
+}
+.salehot .hotgoods{
+	width: 1146px;
+	height: 230px;
+	float: left;
+	/*background: green;*/
+}
+.salehot .hotgoods .pop{
+	width: 190px;
+	height: 230px;
+	float: left;
+	border-right: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+}
+.salehot .hotgoods .pop .goodsbox{
+	color: #666;
+	vertical-align: middle;
+}
+.salehot .hotgoods .pop .goodsbox .goods-img{
+	margin: 10px 0 10px 0;
+	text-align: center;
+}
+.salehot .hotgoods .pop .goodsbox .goods-img img{
+	width: 160px;
+	height: 160px;
+}
+.salehot .hotgoods .pop .goodsbox .goods-name{
+	width: 190px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-bottom: 8px;
+	color: #1A1A1A;
+	font-size: 14px;
+	text-align: center;
+}
+.salehot .hotgoods .pop .goodsbox .goods-price{
+	font-weight: bold;
+	text-align: center;
+	font-size: 14px;
+	color: #ff4e00;
+}
+.salehot .hotgoods .pop .goodsbox em{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+.salehot .changegoods{
+	width: 54px;
+	height: 230px;
+	float: right;
+	/*background: pink;*/
+	text-align: center;
+	position: relative;
+}
+.salehot .changegoods .change-icon{
+	background: url(../imgs/slider-arrow.png) no-repeat -60px 0;
+	height: 32px;
+	width: 18px;
+	position: absolute;
+	top: 40%;
+	left: 35%;
+	cursor: pointer;
+}

@@ -32,25 +32,7 @@ define(["jquery", "cookie"], function($){
 			// }
 
 			// 鼠标移入一级菜单事件
-			$(".firmenu").on("mouseenter", function(){
-				$(".minmenu").css({display: "block"});
-				var abc = 0;
-				$(".minmenu").on("mouseenter", function(){
-						abc = 1;
-					});
-				//console.log(abc);
-
-				$(".firmenu").on("mouseleave", function(){
-					setTimeout(function(){
-						console.log(abc)
-					if (abc) {
-						return;
-					}else{
-						$(".minmenu").css({display: "none"});
-					}
-					},1000)
-				});
-			});
+			$(".firmenu").hover(function(){$(".minmenu").css({display: "block"});}, function(){$(".minmenu").css({display: "none"});});
 		});
 
 		/*加载尾部*/
