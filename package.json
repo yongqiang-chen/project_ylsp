@@ -1,22 +1,22 @@
 {
   "name": "project",
   "version": "1.0.0",
-  "description": "pc项目（电商类）：",
-  "main": "gulpfile.js",
+  "description": "PC项目",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yongqiang-chen/project_ylsp.git"
+    "url": "git+https://github.com/111240/project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yongqiang-chen/project_ylsp/issues"
+    "url": "https://github.com/111240/project/issues"
   },
-  "homepage": "https://github.com/yongqiang-chen/project_ylsp#readme",
+  "homepage": "https://github.com/111240/project#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
