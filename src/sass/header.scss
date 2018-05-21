@@ -200,23 +200,24 @@
 	top:15px;
 	right: 20px;
 }
-.headbox .menu .smenu ul{
+.headbox .menu .smenu>ul{
 	width: 180px;
 	height: 351px;/*原本是360px*/
 	background-color: rgba(0,0,0,0.1); /*背景色透明*/
 	position: absolute;
 	top: 36px;
 	left: 0px;
+	z-index: 999;
 }
-.headbox .menu .smenu ul li{
+.headbox .menu .smenu>ul li{
 	padding: 9px 15px;
 	position: relative;
 }
-.headbox .menu .smenu ul li a{
+.headbox .menu .smenu>ul li a{
 	color: #000;
 	font-size: 14px;
 }
-.headbox .menu .smenu ul li i{
+.headbox .menu .smenu>ul li i{
 	width: 5px;
 	height: 9px;
 	top:14px;
@@ -224,11 +225,68 @@
 	/*background: green;*/
 	background-position: -90px -150px;
 }
-.headbox .menu .smenu ul li:hover{
+.headbox .menu .smenu>ul li:hover{
 	background: white;
 	border-top: 1px solid #36c573;
 	border-bottom: 1px solid #36c573;
+	width: 151px;
 }
-.headbox .menu .smenu ul li a:hover{
+.headbox .menu .smenu>ul li a:hover{
 	color:#36c573;
 }
+
+/*隐藏部分*/
+.headbox .menu .smenu .minmenu{
+	display: none;
+	position: absolute;
+	left: 180px;
+	top: 35px;
+	width: 1017px;
+	min-height: 359px;
+	border: 1px solid #36c573;
+	z-index:2;
+	background: white;
+}
+/*分类菜单*/
+.headbox .menu .smenu .minmenu .namedmenu{
+	text-align: left;
+	float: left;
+	/*margin-top: -10px;*/
+	padding: 20px;
+	min-height: 319px;
+	width: 737px;
+	/*background: yellow;*/
+}
+.headbox .menu .smenu .minmenu .namedmenu .second-menu{
+	display: inline-block;
+	margin-right: 48px;
+	margin-top: 15px;
+	color: #666;
+}
+.headbox .menu .smenu .minmenu .namedmenu .second-menu .second-menu-img{
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+	border-radius: 50%;
+}
+.headbox .menu .smenu .minmenu .namedmenu .second-menu .second-menu-name{
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 14px;
+	padding-top: 5px;
+	margin-bottom: 5px;
+}
+.headbox .menu .smenu .minmenu .recommenu{
+	position: absolute;
+	display: inline-block;
+	right: 0;
+	width: 200px;
+	height: 240px;
+	padding: 20px 20px 20px 0px;
+	background: blue;
+}
+/*.headbox .menu .smenu .minmenu .recommenu ul{
+	width: 0px;
+	height: 0px;
+}*/
