@@ -75,15 +75,28 @@
 	width: 1200px;
 	height: 230px;
 	margin: 0 auto;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	margin-top: 45px;
 	position: relative;
+	box-shadow: 1px 1px 5px 1px #ccc;
 }
-.salehot .hotgoods{
+.salehot .fixed-box{
 	width: 1146px;
 	height: 230px;
 	float: left;
+	position: relative;
+	overflow: hidden;
+}
+.salehot .fixed-box .hotgoods{
+	/*width: 1146px;*/
+	width: 2292px;
+	height: 230px;
+	float: left;
 	/*background: green;*/
+	/*overflow: hidden;*/
+	position: absolute;
+	top: 0px;
+	left: 0px;
 }
 .salehot .hotgoods .pop{
 	width: 190px;
@@ -126,7 +139,14 @@
 	top: 0;
 	right: 0;
 }
-
+.salehot .hotgoods-title{
+	width: 159px;
+	height: 43px;
+	background: url(../imgs/sale-hot.png) no-repeat;
+	position: absolute;
+	top: -43px;
+	left: 45%;
+}
 
 .salehot .changegoods{
 	width: 54px;
@@ -144,4 +164,116 @@
 	top: 40%;
 	left: 35%;
 	cursor: pointer;
+}
+
+.salehot .hotgoods .pop .joincar{
+	position: absolute;
+	display: none;
+	bottom: 0;
+	left: 0;
+	background: orange;
+	width: 190px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	color: black;
+	font-size: 12px;
+	font-weight: bolder;
+}
+.salehot .hotgoods .pop:hover .joincar{
+	display: block;
+}
+
+/*所有特色商品专区*/
+.content-list{
+	width: 1262px;
+	/*width: 1232px;*/
+	/*height: 488px;*/
+	min-height: 600px;
+	margin: 0 auto;
+	/*margin-top: 40px;*/
+	/*padding-right: 30px;*/
+	background: pink;
+}
+.content-list .special-area{
+	width: 1232px;
+	height: 488px;
+	margin-top: 40px;
+	padding-right: 30px;
+	/*background: red;*/
+}
+.content-list .special-area .special-title{
+	text-indent: 5rem;
+	color: #666;
+}
+.content-list .special-area .special-title .fir-title{
+	font-size: 22px;
+	line-height: 28px;
+}
+.content-list .special-area .special-title .sec-title{
+	font-size: 14px;
+}
+.content-list .special-area .special-content{
+	width: 1232px;
+	height: 460px;
+	/*background: pink;*/
+}
+.content-list .special-area .special-content .master-map{
+	width: 432px;
+	height: 460px;
+	float: left;
+	img{
+		width: 100%;
+		height: 100%;
+	}
+}
+.content-list .special-area .special-content .precial-goodsbox{
+	width: 800px;
+	height: 460px;
+	float: left;
+	/*background: green;*/
+
+	.precial-goods{
+		float: left;
+	    position: relative;
+	    width: 185px;
+	    height: 230px;
+	    text-align: center;
+	    overflow: hidden;
+	    cursor: pointer;
+	    img{
+	    	width: 80%;
+	    	height: auto;
+	    }
+	    .precial-goods-name{
+	    	text-align: center;
+	    	margin-top: 35px;
+		    padding-right: 2rem;
+		    font-size: 14px;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    white-space: nowrap;
+	    }
+	    .precial-goods-price{
+	    	    margin-top: 5px;
+			    font-size: 14px;
+			    font-weight: 700;
+			    color: #ff4e00;
+	    }
+	    .joincar{
+	    	position: absolute;
+		    bottom: -50px;
+		    width: 100%;
+		    height: 50px;
+		    line-height: 50px;
+		    font-weight: 700;
+		    color: #333;
+		    background: #ffc000;
+		    cursor: pointer;
+		    -webkit-transition: bottom .3s;
+	    }
+	}
+	.precial-goods:hover .joincar{
+		bottom: 0px;
+	}
 }

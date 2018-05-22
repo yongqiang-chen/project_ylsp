@@ -1,0 +1,20 @@
+{
+	"res_code":1,
+	"res_msg":"success",
+	"res_body":{
+		"list" : [
+			{"id":1, "salehotgoodsimg": "/imgs/5b2bf1d92d72d195822f33f3223e2e2d.jpg", "goodsname":"鲜活红脚小龙虾 中号 1kg", "goodspricespan": 44.90},
+			{"id":2, "salehotgoodsimg": "/imgs/df0262ad7ee372ba42794df6debf6b8e..jpg", "goodsname":"真正饼业 雨菓蛋黄鲜肉粽 100g", "goodspricespan": 7.50},
+			{"id":3, "salehotgoodsimg": "/imgs/0a94ccb22853f96aa54c6187891a596a..jpg", "goodsname":"越南进口小青芒 350 g 以上/1个装", "goodspricespan": 3.88},
+			{"id":4, "salehotgoodsimg": "/imgs/2df79b713f15e40be6bbb69a89e8e827..jpg", "goodsname":"莎麦调味鸡精 大包 1袋500g", "goodspricespan": 15.80},
+			{"id":5, "salehotgoodsimg": "/imgs/3bdfde675870da729db226bed9c4d3e2.jpg", "goodsname":"爆炒五香味香瓜子 椒盐味 1kg", "goodspricespan": 9.90},
+			{"id":6, "salehotgoodsimg": "/imgs/rBLsjlm8l7mAb_n6AAT1v1uiMzQ187.jpg", "goodsname":"浓味道的咖啡 中号 1盒", "goodspricespan": 22.90},
+			{"id":7, "salehotgoodsimg": "/imgs/rBLsjlmNY_yAMHqYAAZQIi1gRNs472.jpg", "goodsname":"不知道好不好 中号 1盒", "goodspricespan": 12.90},
+			{"id":8, "salehotgoodsimg": "/imgs/fdcf3f255d36b969d272e17157093a58.jpg", "goodsname":"好像是猪肉  1kg", "goodspricespan": 22.90},
+			{"id":9, "salehotgoodsimg": "/imgs/f47976f544d51d0e56941a62cf39f094..jpg", "goodsname":"香瓜  1kg", "goodspricespan": 10.00},
+			{"id":10, "salehotgoodsimg": "/imgs/ab3060c7b2efd5d20b656e4a78d4292a..jpg", "goodsname":"胡豆酱  1kg", "goodspricespan": 17.50},
+			{"id":11, "salehotgoodsimg": "/imgs/b41748f3c8d1ff4edb7afc46fc2f51bd..jpg", "goodsname":"新鲜柠檬  1kg", "goodspricespan": 7.80},
+			{"id":12, "salehotgoodsimg": "/imgs/c513bf2fee149b0d03d3be19ac5c795c..jpg", "goodsname":"过期牛奶  1kg", "goodspricespan": 8.80}
+		]
+	}
+}

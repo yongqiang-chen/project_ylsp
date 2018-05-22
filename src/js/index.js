@@ -27,6 +27,44 @@ require(["config"], function(){
 				duration : 3000,
 				addPrevNextBtn: false
 			});
+
+			// salehot数据加入
+			//利用ajax来访问后端接口，获取数据
+
+			$.ajax({
+				type : "get",
+				url : "mock/salehotlist.json",
+				dataType : "json",
+				success : function(responseData){
+					console.log("123");
+					//处理数据，渲染
+					responseData.res_body.list.forEach(function(product){
+						$(".template").clone() //克隆模板
+										.removeClass("template").addClass("pop") //修改类名
+										.css({display:"block"}) //设置display
+										.appendTo(".hotgoods") //追加到.hotgoods内部
+										.children(".goodsbox").children(".goods-img").children(".salehot-goods-img").attr("src", product.salehotgoodsimg) //修改图片路径
+										.parents(".goods-img").next(".goods-name").text(product.goodsname)//商品名字
+										.next().text(product.id)//商品编号
+										.next().children(".goods-price-span").text(product.goodspricespan);//商品价格
+					});
+				},
+				error:function(err){
+					console.log(err)
+				}
+			});
+
+			//添加当季精选changegoods点击事件
+			var a = 2;
+			$(".changegoods").click(function(){
+				if(a % 2 == 0){
+					$(".hotgoods").css({left: "-1146px"});
+				}else{
+					$(".hotgoods").css({left: "0px"});
+				}
+				a++;
+			});
+			
 		});
 	});
 });
