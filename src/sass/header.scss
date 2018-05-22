@@ -164,6 +164,7 @@
 	/*margin-top:2px;*/
 	margin: 0 auto;
 	margin-top: 6px;
+	position: relative;
 }
 .headbox .menu .smenu{
 	width: 180px;
@@ -204,9 +205,9 @@
 	width: 180px;
 	height: 360px;/*原本是360px*/
 	background-color: rgba(0,0,0,0.1); /*背景色透明*/
-	position: absolute;
-	top: 36px;
-	left: 0px;
+	position: relative;
+/*	top: 36px;
+	left: 0px;*/
 	z-index: 999;
 }
 .headbox .menu .smenu>ul li{
@@ -248,11 +249,11 @@
 	width: 161px;
 	/*padding: 1px 10px;*/
 }
-.headbox .menu .smenu>ul li a:hover{
-	color:#36c573;
-}
 .headbox .menu .smenu>ul li:hover .minmenu{
 	display: block;
+}
+.headbox .menu .smenu>ul li a:hover{
+	color:#36c573;
 }
 
 /*隐藏部分*/
@@ -265,7 +266,7 @@
 	min-height: 360px;
 	border: 1px solid #36c573;
 	z-index:2;
-	background: white;
+	background: blue;
 }
 /*分类菜单*/
 .headbox .menu .smenu .minmenu .namedmenu{

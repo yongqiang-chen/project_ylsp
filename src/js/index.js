@@ -36,7 +36,6 @@ require(["config"], function(){
 				url : "mock/salehotlist.json",
 				dataType : "json",
 				success : function(responseData){
-					console.log("123");
 					//处理数据，渲染
 					responseData.res_body.list.forEach(function(product){
 						$(".template").clone() //克隆模板
