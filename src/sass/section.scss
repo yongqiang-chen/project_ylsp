@@ -1,0 +1,157 @@
+/*下部分*/
+.bigmenu{
+	width: 100%;
+	height: 34px;
+	border-bottom: 2px solid #36c573;
+}
+.menu{
+	width: 1200px;
+	height: 34px;
+	/*background: #36c573;*/
+	/*margin-top:2px;*/
+	margin: 0 auto;
+	margin-top: 6px;
+	position: relative;
+	/*border-bottom: 2px solid #36c573;*/
+}
+.menu .smenu{
+	width: 180px;
+	height: 34px;
+	float: left;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: #36c573;
+	position: relative;
+}
+.menu .smenu>a{
+	display: block;
+	width: 180px;
+	height: 34px;
+}
+.menu .smenu>a span{
+	color: white;
+	display: block;
+	float: left;
+	width: 73px;
+	height: 18px;
+	font-size: 18px;
+	line-height: 18px;
+	margin-top: 10px;
+	margin-left: 29px;
+}
+.menu .smenu>a i{
+	height: 0;
+	width: 0;
+	border-left: 5px solid #36c573;
+	border-right: 5px solid #36c573;
+	border-bottom: 5px solid #36c573;
+	border-top: 5px solid white;
+	top:15px;
+	right: 20px;
+}
+.menu .smenu>ul{
+	width: 180px;
+	height: 360px;/*原本是360px*/
+	background-color: rgba(0,0,0,0.1); /*背景色透明*/
+	position: relative;
+/*	top: 36px;
+	left: 0px;*/
+	z-index: 999;
+}
+.menu .smenu>ul li{
+	/*padding: 9px 15px;*/
+	/*position: relative;*/
+	width: 160px;
+	height: 36px;
+	text-align: left;
+	padding: 2px 10px;
+	/*border-top: 1px solid #36c573;*/
+	/*border-bottom: 1px solid #36c573;*/
+}
+.menu .smenu>ul li a{
+	color: #000;
+	font-size: 14px;
+	line-height: 36px;
+	font-weight: bolder;
+	display: block;
+	float: left;
+}
+.menu .smenu>ul li em{
+	width: 5px;
+	height: 9px;
+	display: block;
+	float: right;
+	margin-top: 14px;
+	margin-right: 20px;
+	/*top:14px;*/
+	/*right: 20px;*/
+	/*background: green;*/
+	background: url(../imgs/icon.png) no-repeat -90px -150px;
+	/*position: absolute;*/
+	/*background-position: -90px -150px;*/
+}
+.menu .smenu>ul li:hover{
+	background: white;
+	border-top: 1px solid #36c573;
+	border-bottom: 1px solid #36c573;
+	width: 161px;
+	/*padding: 1px 10px;*/
+}
+.menu .smenu>ul li:hover .minmenu{
+	display: block;
+}
+.menu .smenu>ul li a:hover{
+	color:#36c573;
+}
+
+/*隐藏部分*/
+.menu .smenu .minmenu{
+	display: none;
+	position: absolute;
+	left: 180px;
+	top: 0px;
+	width: 1017px;
+	min-height: 360px;
+	border: 1px solid #36c573;
+	z-index:2;
+	background: blue;
+}
+/*分类菜单*/
+.menu .smenu .minmenu .namedmenu{
+	text-align: left;
+	float: left;
+	/*margin-top: -10px;*/
+	padding: 20px;
+	min-height: 319px;
+	width: 737px;
+	/*background: yellow;*/
+}
+.menu .smenu .minmenu .namedmenu .second-menu{
+	display: inline-block;
+	margin-right: 48px;
+	margin-top: 15px;
+	color: #666;
+}
+.menu .smenu .minmenu .namedmenu .second-menu .second-menu-img{
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+	border-radius: 50%;
+}
+.menu .smenu .minmenu .namedmenu .second-menu .second-menu-name{
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 14px;
+	padding-top: 5px;
+	margin-bottom: 5px;
+}
+.menu .smenu .minmenu .recommenu{
+	position: absolute;
+	display: inline-block;
+	right: 0;
+	width: 200px;
+	height: 240px;
+	padding: 20px 20px 20px 0px;
+	background: blue;
+}

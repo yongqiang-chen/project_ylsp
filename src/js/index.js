@@ -1,17 +1,8 @@
 //依赖配置
 require(["config"], function(){
 	//依赖配置中各短名称的模块
-	require(["jquery", "load", "play"], function($){
+	require(["jquery", "load", "section","play"], function($){
 		$(function(){
-			// 老师的测试
-			/*$(".container").hover(function(){
-				// $(this).animate({opacity: 0.3}, 3000)
-				console.log(this)
-			}, function(){
-				// $(this).animate({opacity: 1}, 3000)
-				console.log(this)
-			})*/
-
 			// 轮播图数据
 			$(".box").carousel({
 				imgs : [
@@ -30,13 +21,13 @@ require(["config"], function(){
 
 			// salehot数据加入
 			//利用ajax来访问后端接口，获取数据
-
+			var num = 1;
 			$.ajax({
 				type : "get",
 				url : "mock/salehotlist.json",
 				dataType : "json",
 				success : function(responseData){
-					//处理数据，渲染
+					//当季精选处理数据，渲染
 					responseData.res_body.list.forEach(function(product){
 						$(".template").clone() //克隆模板
 										.removeClass("template").addClass("pop") //修改类名
@@ -46,6 +37,41 @@ require(["config"], function(){
 										.parents(".goods-img").next(".goods-name").text(product.goodsname)//商品名字
 										.next().text(product.id)//商品编号
 										.next().children(".goods-price-span").text(product.goodspricespan);//商品价格
+					});
+					//特色商品区				
+					responseData.res_body.contitle.forEach(function(pro){
+
+						$(".mb-special-area").clone()
+												.removeClass("mb-special-area").addClass("special-area")
+												.css({display:"block"})
+												.appendTo(".content-list")
+												.find(".fir-title").text(pro.firtitle)
+												.next().text(pro.sectitle)
+												.parents(".special-area").find(".master-map").children("img").attr("src", pro.img)
+												.parents(".special-area").find(".precial-goodsbox").addClass("pro"+num);
+						var _arr;
+						if(num<5){
+							if(num == 1){
+								_arr = responseData.res_body.congoods.one;
+							}else if(num ==2){
+								_arr = responseData.res_body.congoods.two;
+							}else if(num ==3){
+								_arr = responseData.res_body.congoods.three;
+							}else if(num ==4){
+								_arr = responseData.res_body.congoods.four;
+							}
+							_arr.forEach(function(prod){
+									$(".mb-precial-goods").clone()
+															.removeClass("mb-precial-goods").addClass("precial-goods")
+															.css({display:"block"})
+															.appendTo(".pro"+num)
+															.children("img").attr("src", prod.img)
+															.next(".precial-goods-name").text(prod.name)
+															.next().text(prod.price);
+							});
+							num++;	
+						}	
+
 					});
 				},
 				error:function(err){
@@ -62,8 +88,7 @@ require(["config"], function(){
 					$(".hotgoods").css({left: "0px"});
 				}
 				a++;
-			});
-			
+			});			
 		});
 	});
 });

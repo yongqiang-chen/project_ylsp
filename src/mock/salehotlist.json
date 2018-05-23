@@ -15,6 +15,54 @@
 			{"id":10, "salehotgoodsimg": "/imgs/ab3060c7b2efd5d20b656e4a78d4292a..jpg", "goodsname":"胡豆酱  1kg", "goodspricespan": 17.50},
 			{"id":11, "salehotgoodsimg": "/imgs/b41748f3c8d1ff4edb7afc46fc2f51bd..jpg", "goodsname":"新鲜柠檬  1kg", "goodspricespan": 7.80},
 			{"id":12, "salehotgoodsimg": "/imgs/c513bf2fee149b0d03d3be19ac5c795c..jpg", "goodsname":"过期牛奶  1kg", "goodspricespan": 8.80}
+		],
+		"contitle" : [
+			{"img": "/imgs/zt (1).png", "firtitle":"蔬菜专区", "sectitle": "/农家优选，安全放心"},
+			{"img": "/imgs/zt (2).png", "firtitle":"水果专区", "sectitle": "/新鲜水果每一天，健康生活每一刻"},
+			{"img": "/imgs/zt (3).png", "firtitle":"海鲜食品", "sectitle": "/鲜活速冻，安全可溯"},
+			{"img": "/imgs/zt (4).png", "firtitle":"精选肉类", "sectitle": "/精选肉类 严格质检 全程冷链"}
+		],
+		"congoods" :{ 
+			"one" :[
+			{"img": "/imgs/food (1).jpg", "name":"商品1", "price": "￥7.50"},
+			{"img": "/imgs/food (2).jpg", "name":"商品2", "price": "￥3.88"},
+			{"img": "/imgs/food (3).jpg", "name":"商品3", "price": "￥15.80"},
+			{"img": "/imgs/food (4).jpg", "name":"商品4", "price": "￥9.90"},
+			{"img": "/imgs/food (5).jpg", "name":"商品5", "price": "￥22.90"},
+			{"img": "/imgs/food (6).jpg", "name":"商品6", "price": "￥12.90"},
+			{"img": "/imgs/food (7).jpg", "name":"商品7", "price": "￥22.90"},
+			{"img": "/imgs/food (8).jpg", "name":"商品8", "price": "￥10.00"}
+		],
+			"two" :[
+			{"img": "/imgs/food (9).jpg", "name":"商品1", "price": "￥7.50"},
+			{"img": "/imgs/food (10).jpg", "name":"商品2", "price": "￥3.88"},
+			{"img": "/imgs/food (11).jpg", "name":"商品3", "price": "￥15.80"},
+			{"img": "/imgs/food (12).jpg", "name":"商品4", "price": "￥9.90"},
+			{"img": "/imgs/food (13).jpg", "name":"商品5", "price": "￥22.90"},
+			{"img": "/imgs/food (14).jpg", "name":"商品6", "price": "￥12.90"},
+			{"img": "/imgs/food (15).jpg", "name":"商品7", "price": "￥22.90"},
+			{"img": "/imgs/food (16).jpg", "name":"商品8", "price": "￥10.00"}
+		],
+			"three" :[
+			{"img": "/imgs/food (17).jpg", "name":"商品1", "price": "￥7.50"},
+			{"img": "/imgs/food (18).jpg", "name":"商品2", "price": "￥3.88"},
+			{"img": "/imgs/food (19).jpg", "name":"商品3", "price": "￥15.80"},
+			{"img": "/imgs/food (20).jpg", "name":"商品4", "price": "￥9.90"},
+			{"img": "/imgs/food (21).jpg", "name":"商品5", "price": "￥22.90"},
+			{"img": "/imgs/food (22).jpg", "name":"商品6", "price": "￥12.90"},
+			{"img": "/imgs/food (23).jpg", "name":"商品7", "price": "￥22.90"},
+			{"img": "/imgs/food (24).jpg", "name":"商品8", "price": "￥10.00"}
+		],
+			"four" :[
+			{"img": "/imgs/food (25).jpg", "name":"商品1", "price": "￥7.50"},
+			{"img": "/imgs/food (26).jpg", "name":"商品2", "price": "￥3.88"},
+			{"img": "/imgs/food (27).jpg", "name":"商品3", "price": "￥15.80"},
+			{"img": "/imgs/food (28).jpg", "name":"商品4", "price": "￥9.90"},
+			{"img": "/imgs/food (29).jpg", "name":"商品5", "price": "￥22.90"},
+			{"img": "/imgs/food (30).jpg", "name":"商品6", "price": "￥12.90"},
+			{"img": "/imgs/food (31).jpg", "name":"商品7", "price": "￥22.90"},
+			{"img": "/imgs/food (32).jpg", "name":"商品8", "price": "￥10.00"}
 		]
+		 }
 	}
 }

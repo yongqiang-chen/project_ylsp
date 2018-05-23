@@ -1,0 +1,90 @@
+.login{
+	padding: 100px 0;
+    background: #6ebd47;
+    .container{
+    	width: 1200px;
+    	margin: 0 auto;
+	    display: flex;
+	    justify-content: space-around;
+	    img{
+	    	height: 230px;
+	    }
+	    .login-box{
+	    	    padding: 20px;
+    			background: #fff;
+    			border-radius: 4px;
+    		.login-header{
+    			color: #333;
+    		}
+    		form{
+    			display: block;
+    			width: 330px;
+    			height: 265px;
+    			background: white;
+    			text-align: center;
+				.login-list{
+					width: 330px;
+					height: 14px;
+					font-size: 14px;
+					line-height: 14px;
+					padding-top: 20px;
+					text-align: center;
+					a{
+						color:#000;
+						padding:0 9px;
+					}
+					a{
+						&:hover{color:orange;};
+					}
+				}
+				.login-user{
+					width: 290px;
+					height: 36px;
+    				margin-top: 30px;
+    				margin-left: 20px;
+    				border: none;
+    				input{
+    					text-indent: 1rem;
+    					width: 290px;
+						height: 35px;
+						line-height: 36px;
+						border-radius: 4px;
+						outline: none;
+	    				border: 1px solid #ccc;
+						
+    				}
+				}
+				.login-mima{
+					width: 290px;
+					height: 36px;
+    				margin-top: 30px;
+    				margin-left: 20px;
+    				border: none;
+    				input{
+    					text-indent: 1rem;
+    					width: 290px;
+						height: 35px;
+						line-height: 36px;
+						border-radius: 4px;
+						outline: none;
+	    				border: 1px solid #ccc;
+						
+    				}
+				}
+				.submit{
+					display: block;
+					width: 290px;
+					height: 35px;
+					margin-top: 30px;
+					margin-left: 20px;
+					background: orange;
+					border: none;
+					cursor: pointer;
+					color: white;
+					font-size: 18px;
+				}
+
+    		}
+	    }
+    }
+}

@@ -7,42 +7,18 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/section.css">
 </head>
 <body>
 	<header></header>
-
-	<!-- 老师的测试 -->
-	<!-- <div class="container">HELLO大家好</div> -->
+	<section></section>
 	
 	<div class="box"></div> <!-- 轮播图 --> 
 	
-	<!-- <div class="container"></div> -->
 	<!-- 当季精选 -->
 	<div class="salehot">
 		<div class="fixed-box">
-			<div class="hotgoods">
-			<!-- <div class="pop">
-				<a href="#" class="goodsbox" target="_blank">
-					<div class="goods-img">
-						<img src="imgs/5b2bf1d92d72d195822f33f3223e2e2d.jpg">
-					</div>
-					<p class="goods-name">鲜活红脚小龙虾 中号 1kg</p>
-					<p class="goods-price">
-						￥<span>44.90</span>
-					</p>
-					<em class="presale">
-						<img src="imgs/index_presale.png">
-					</em>
-				</a>
-				<a href="#" class="joincar"></a>
-			</div>  -->
-			<!-- <div class="pop"></div>
-			<div class="pop"></div>
-			<div class="pop"></div>
-			<div class="pop"></div>
-			<div class="pop"></div>
-			<div class="pop"></div> -->
-			</div>
+			<div class="hotgoods"></div>
 		</div>
 		<div class="hotgoods-title"></div>
 		<div class="changegoods">
@@ -50,7 +26,7 @@
 		</div>
 	</div>
 
-	<!-- 模板 -->
+	<!-- 当季精选商品模板 -->
 	<div class="template" style="display: none;">
 		<a href="#" class="goodsbox" target="_blank">
 			<div class="goods-img">
@@ -63,43 +39,39 @@
 			</p>
 			<em class="presale">
 				<img src="imgs/index_presale.png">
-			</em>
-			
+			</em>			
 		</a>
 		<a href="#" class="joincar">加入购物车</a>
 	</div>
 	
 	<!-- 所有特色商品专区 -->
 	<div class="content-list">
-		<div class="special-area">
-			<div class="special-title">
-				<span class="fir-title">蔬菜专区</span>
-				<span class="sec-title">/农家优选，安全放心</span>
+		<!-- 这里动态加入特色区模板 -->
+			
+	</div>
+
+	<!-- 特色区模板动态加入到content-list -->
+	<div class="mb-special-area" style="display: none;">
+		<div class="special-title">
+			<span class="fir-title">蔬菜专区</span>
+			<span class="sec-title">/农家优选，安全放心</span>
+		</div>
+		<div class="special-content">
+			<div class="master-map">
+				<img src="imgs/zt (1).png">
 			</div>
-			<div class="special-content">
-				<div class="master-map">
-					<img src="imgs/zt (1).png">
-				</div>
-				<div class="precial-goodsbox">
-					<div class="precial-goods">
-						<img src="/imgs/food (1).jpg">
-						<div class="precial-goods-name">好吃的 250g/份</div>
-						<div class="precial-goods-price">￥7.50</div>
-						<div class="joincar">加入购物车</div>
-					</div>
-					<div class="precial-goods"></div>
-					<div class="precial-goods"></div>
-					<div class="precial-goods"></div>
-					<div class="precial-goods"></div>
-					<div class="precial-goods"></div>
-					<div class="precial-goods"></div>
-					<div class="precial-goods"></div>	
-				</div>
+			<div class="precial-goodsbox">		
+				<!-- 动态生成商品加入到这里 -->
 			</div>
 		</div>
-		<div class="special-area"></div>
-		<div class="special-area"></div>
-		<div class="special-area"></div>	
+	</div>
+	
+	<!-- 特色区商品模板 -->
+	<div class="mb-precial-goods" style="display: none;">
+		<img src="/imgs/food (1).jpg">
+		<div class="precial-goods-name">好吃的 250g/份</div>
+		<div class="precial-goods-price">￥7.50</div>
+		<div class="joincar">加入购物车</div>
 	</div>
 
 	<footer></footer>

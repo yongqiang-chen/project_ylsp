@@ -7,7 +7,10 @@ require.config({
 		fly : "lib/jquery-plugins/jquery.fly.min",
 		zoom : "lib/jquery-plugins/jquery.elevateZoom-3.0.8.min", //放大镜
 		load : "js/loadHeadAndFooter",
-		play : "js/indexcarousel"
+		play : "js/indexcarousel", //轮播
+		login : "js/login",
+		section : "js/section"
+
 	},
 	shim : {
 		fly : {
@@ -17,6 +20,9 @@ require.config({
 			deps : ["jquery"]
 		},
 		play : {
+			deps : ["jquery"]
+		},
+		login : {
 			deps : ["jquery"]
 		}
 	}
