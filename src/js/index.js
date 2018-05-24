@@ -3,22 +3,31 @@ require(["config"], function(){
 	//依赖配置中各短名称的模块
 	require(["jquery", "load", "section","play"], function($){
 		$(function(){
-			var off = $(".bignav").offset().top;
-			//吸顶
+			// 楼层导航栏
+			var away = $(".content-list").offset().top;
 			$(window).scroll(function(){
-				var scrollTop = $(window).scrollTop();
-				if(scrollTop > off){
-					$(".bignav").css({
-						position:"fixed", 
-						background:"white",
-						top:0, 
-						"z-index":100000, 
-						width:"100%", 
-						height:"94px"});
-				} else {
-					$(".bignav").css({position:"static"});
+				var _scrollTop = $(window).scrollTop();
+				// console.log(away,_scrollTop)
+				if(_scrollTop > away){
+					$(".floor-li").css({opacity: 1});
+				}else{
+					$(".floor-li").css({opacity: 0});
 				}
-				
+			});
+
+			//楼层栏点击事件
+			$(".floor-li").on("click",function(e){
+				var src = e.target;
+				var lis = $(".floor-lis");
+				// var _floors = $(".special-area");
+				// console.log(_floors[1])
+				if(src.nodeName === "LI"){
+					var index = Array.from(lis).indexOf(src);
+					// var _floor = _floors[index];
+					var _height = $(".content-list").offset().top;
+					$(window).scrollTop(_height + index*488 - 100);
+
+				}
 			});
 
 			// 轮播图数据
@@ -67,6 +76,7 @@ require(["config"], function(){
 												.next().text(pro.sectitle)
 												.parents(".special-area").find(".master-map").children("img").attr("src", pro.img)
 												.parents(".special-area").find(".precial-goodsbox").addClass("pro"+num);
+
 						var _arr;
 						if(num<5){
 							if(num == 1){

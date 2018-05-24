@@ -3,6 +3,25 @@ define(["jquery"], function($){
 	$(function(){//通过ajax
 		/*加载头部*/
 		$("header").load("/html/include/header.html", function(){
+			//吸顶
+			var off = $(".bignav").offset().top;
+			$(window).scroll(function(){
+				var scrollTop = $(window).scrollTop();
+				if(scrollTop > off){
+					$(".bignav").css({
+						position:"fixed", 
+						background:"white",
+						top:0, 
+						"z-index":100000, 
+						width:"100%", 
+						height:"94px"});
+					$(".bigmenu").css({display:"none"});
+				} else {
+					$(".bignav").css({position:"static"});
+					$(".bigmenu").css({display:"block"});
+				}
+				
+			});
 			//老师的案例测试
 			// /* 为搜索框绑定键盘弹起事件 */
 			// $(".search .word").on("keyup", function(){
