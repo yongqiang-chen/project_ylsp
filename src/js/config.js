@@ -9,7 +9,9 @@ require.config({
 		load : "js/loadHeadAndFooter",
 		play : "js/indexcarousel", //轮播
 		login : "js/login",
-		section : "js/section"
+		section : "js/section",
+		list : "js/list",
+		require : "js/register"
 
 	},
 	shim : {
@@ -23,6 +25,12 @@ require.config({
 			deps : ["jquery"]
 		},
 		login : {
+			deps : ["jquery"]
+		},
+		list : {
+			deps : ["jquery"]
+		},
+		register : {
 			deps : ["jquery"]
 		}
 	}

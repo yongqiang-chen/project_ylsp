@@ -1,4 +1,4 @@
-.login{
+.register{
 	padding: 100px 0;
     background: #6ebd47;
     .container{
@@ -9,17 +9,14 @@
 	    img{
 	    	height: 230px;
 	    }
-	    .login-box{
+	    .register-box{
 	    	    padding: 20px;
     			background: #fff;
     			border-radius: 4px;
-    		/*.login-header{
-    			color: #333;
-    		}*/
     		.form{
     			display: block;
     			width: 330px;
-    			height: 265px;
+    			height: 440px;
     			background: white;
     			text-align: center;
 				.choice-list{
@@ -37,37 +34,11 @@
 						&:hover{color:orange;};
 					}
 				}
-				.login-user{
+				.register-user,.register-mima,.register-mima2{
 					width: 290px;
 					height: 36px;
     				margin-top: 30px;
     				margin-left: 20px;
-    				border: none;
-    				position: relative;
-    				input{
-    					text-indent: 1rem;
-    					width: 290px;
-						height: 35px;
-						line-height: 36px;
-						border-radius: 4px;
-						outline: none;
-	    				border: 1px solid #ccc;
-						
-    				}
-    				span{
-    					position: absolute;
-    					bottom: -18px;
-    					left: 0;
-    					font-size: 14px;
-    					color: red;
-    				}
-				}
-				.login-mima{
-					width: 290px;
-					height: 36px;
-    				margin-top: 30px;
-    				margin-left: 20px;
-    				border: none;
     				position: relative;
     				input{
     					text-indent: 1rem;
@@ -80,25 +51,54 @@
     				}
     				span{
     					position: absolute;
-    					bottom: -18px;
+    					bottom: -15px;
     					left: 0;
-    					font-size: 14px;
     					color: red;
+    					font-size: 12px;
     				}
-				}
-				.submit{
-					display: block;
+				}	
+				/*.proving-box{
 					width: 290px;
-					height: 35px;
-					margin-top: 30px;
-					margin-left: 20px;
-					background: orange;
-					border: none;
-					cursor: pointer;
-					color: white;
-					font-size: 18px;
-				}
-
+					height: 36px;
+    				margin-top: 30px;
+    				margin-left: 20px;
+    				input{
+    					text-indent: 1rem;
+					    width: 178px;
+					    height: 36px;
+					    line-height: 36px;
+					    border-radius: 4px;
+					    outline: none;
+					    border: 1px solid #ccc;
+    				}
+    				button{
+    					width: 100px;
+    					height: 36px;
+    					border: none;
+    					background: #7bbe2b;
+    					font-size: 14px;
+    					color: white;
+    					border-radius: 4px;
+    				}
+				}*/	
+				.read-check{
+    					width: 290px;
+						height: 36px;
+	    				margin-top: 30px;
+	    				margin-left: 20px;
+    			}	
+    			#apply{
+    				display: block;
+    				width: 290px;
+					height: 36px;
+    				margin-top: 30px;
+    				margin-left: 20px; 
+    				background: orange;
+    				border: none;
+    				font-size: 18px;
+    				color: white;
+    				cursor: pointer;
+    			}	
     		}
 	    }
     }

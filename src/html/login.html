@@ -14,22 +14,24 @@
 		<div class="container">
 			<img src="/imgs/login-bg.png">
 			<div class="login-box">
-				<div class="login-header"></div>
+				<!-- <div class="login-header"></div> -->
 				<div>
-					<form action="" method="get">
-						<div class="login-list">
+					<div class="form">
+						<div class="choice-list">
 							<a href="http://localhost:8080/html/login.html">手机密码登录</a>|
 							<a href="#">手机验证码登录</a>|
-							<a href="http://localhost:8080/html/rejister">立即注册</a>
+							<a href="http://localhost:8080/html/register.html">立即注册</a>
 						</div>
 						<div class="login-user">
-							<input type="text" placeholder="请输入手机号" class="input-user">
+							<input type="text" placeholder="请输入手机号" id="phone">
+							<span class="phone"></span>
 						</div>
 						<div class="login-mima">
-							<input type="password" placeholder="请输入密码" class="input-mima">
+							<input type="password" placeholder="请输入密码" id="password">
+							<span class="password"></span>
 						</div>
-						<input type="submit" value="提交" class="submit">
-					</form>
+						<button class="submit">提交</button>
+					</div>
 				</div>
 			</div>
 		</div>

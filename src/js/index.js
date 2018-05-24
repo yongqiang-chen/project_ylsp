@@ -3,6 +3,24 @@ require(["config"], function(){
 	//依赖配置中各短名称的模块
 	require(["jquery", "load", "section","play"], function($){
 		$(function(){
+			var off = $(".bignav").offset().top;
+			//吸顶
+			$(window).scroll(function(){
+				var scrollTop = $(window).scrollTop();
+				if(scrollTop > off){
+					$(".bignav").css({
+						position:"fixed", 
+						background:"white",
+						top:0, 
+						"z-index":100000, 
+						width:"100%", 
+						height:"94px"});
+				} else {
+					$(".bignav").css({position:"static"});
+				}
+				
+			});
+
 			// 轮播图数据
 			$(".box").carousel({
 				imgs : [
